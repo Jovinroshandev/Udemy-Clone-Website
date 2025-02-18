@@ -28,7 +28,8 @@ Udemy_Clone
 
 ## 📸 Project Preview  
 
-*(Add a screenshot of your project here once it's ready)*  
+![image](https://github.com/user-attachments/assets/87120a23-a118-4afc-aab9-0efbbaa044ec)
+
 
 ---
 
