@@ -18,6 +18,10 @@ body{
     justify-content:space-between;
     align-items: center;
     border-bottom: solid black 1px;
+    position: sticky;
+    top: 0;
+    background-color: white;
+    z-index: 1;
 }
 
 .Navbar__s1{
@@ -65,7 +69,7 @@ body{
 .Navbar__s3__search_box input:focus{
     outline: none;
 }
-.Navbar__s2__button,.Navbar__s4__button{
+.Navbar__s2__button,.Navbar__s4 p{
     padding: 20px 20px;
     /* margin: 10px; */
     border: none;
@@ -73,98 +77,141 @@ body{
     background-color: white;
     cursor: pointer;
 }
-.Navbar__s2__button:hover,.Navbar__s4__button:hover{
+.Navbar__s2__button:hover{
     padding: 20px 20px;
     /* margin: 10px; */
     background-color: #EDE5F9;
     color: #6D28D2;
     cursor: pointer;
 }
-.Navbar__s4__login_button{
-    font-family: "Gabarito", serif;
-    font-optical-sizing: auto;
-    font-weight: 20px;
-    font-style: normal;
-    font-weight: bold;
-    font-size: 15px;
-    padding: 10px 20px;
-    color: #A435F0;
-    border-radius: 5px;
-    background-color: white;
-    border:solid 1px #6D28D2;
-    cursor: pointer;
-}
-.Navbar__s4__login_button:hover{
-    font-family: "Gabarito", serif;
-    font-optical-sizing: auto;
-    font-weight: 20px;
-    font-style: normal;
-    font-weight: bold;
-    font-size: 15px;
-    padding: 10px 20px;
-    color: #A435F0;
-    border-radius: 5px;
+.udemy_business__head:hover{
     background-color: #EDE5F9;
-    border:solid 1px #6D28D2;
-}
-.Navbar__s4__signup_button{
-    font-family: "Gabarito", serif;
-    font-optical-sizing: auto;
-    font-weight: 20px;
-    font-style: normal;
-    font-weight: bold;
-    font-size: 15px;
-    padding: 10px 20px;
-    color: white;
-    border-radius: 5px;
-    background-color: #5e15cb;
-    border:none;
+    color: #6D28D2;
     cursor: pointer;
 }
-.Navbar__s4__signup_button:hover{
-    font-family: "Gabarito", serif;
-    font-optical-sizing: auto;
-    font-weight: 20px;
-    font-style: normal;
-    font-weight: bold;
-    font-size: 15px;
-    padding: 10px 20px;
-    color: white;
-    border-radius: 5px;
-    background-color: #892DE1;
-    border:none;
-    cursor: pointer;
-}
-.Navbar__s4__globe_button{
-    display: inline-block;
-    font-family: "Gabarito", serif;
-    font-optical-sizing: auto;
-    font-weight: 20px;
-    font-style: normal;
-    font-weight: bold;
-    font-size: 15px;
-    padding: 10px 10px;
-    color: #A435F0;
-    border-radius: 5px;
-    background-color: white;
-    border:solid 1px #6D28D2;
-    cursor: pointer;
-}
-.Navbar__s4__globe_button:hover{
-    display: inline-block;
-    font-family: "Gabarito", serif;
-    font-optical-sizing: auto;
-    font-weight: 20px;
-    font-style: normal;
-    font-weight: bold;
-    font-size: 15px;
-    padding: 10px 10px;
-    color: #A435F0;
-    border-radius: 5px;
+.team_on_udemy__head:hover{
     background-color: #EDE5F9;
-    border:solid 1px #6D28D2;
+    color: #6D28D2;
+    cursor: pointer;
+}
+.my_learning__head:hover{
+    background-color: #EDE5F9;
+    color: #6D28D2;
+    cursor: pointer;
+}
+.my_learning__head:hover{
+    background-color: #EDE5F9;
+    color: #6D28D2;
+    cursor: pointer;
+}
+.favorite_icon__head:hover{
+    background-color: #EDE5F9;
+    color: #6D28D2;
+    cursor: pointer;
+}
+.shopping_cart__head:hover{
+    background-color: #EDE5F9;
+    color: #6D28D2;
+    cursor: pointer;
+}
+.bell_icon__head:hover{
+    background-color: #EDE5F9;
+    color: #6D28D2;
+    cursor: pointer;
 }
 
+.Navbar__s4{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    font-family: "Gabarito", serif;
+    font-weight: 20px;
+    font-style: normal;
+    font-size: 15px;
+}
+
+.my_learning,.udemy_business,.team_on_udemy,.favorite_icon,.shopping_cart,.bell_icon
+{
+    position: relative;
+}
+.my_learning__msg{
+    background-color: white;
+    border: solid black 1px;
+    padding: 10px;
+    position: absolute;
+    top: 105%;
+    right: 0;
+    width: 150px;
+    display: none;
+}
+.udemy_business__msg{
+    background-color: white;
+    border: solid black 1px;
+    padding: 10px;
+    position: absolute;
+    top: 105%;
+    right: 0;
+    width: 200px;
+    display: none;
+}
+.team_on_udemy__msg{
+    background-color: white;
+    border: solid black 1px;
+    padding: 10px;
+    position: absolute;
+    top: 105%;
+    right: 0;
+    width: 200px;
+    display: none;
+}
+.favorite_icon__msg{
+    background-color: white;
+    border: solid black 1px;
+    padding: 10px;
+    position: absolute;
+    top: 105%;
+    right: 0;
+    width: 200px;
+    display: none;
+}
+.shopping_cart__msg{
+    background-color: white;
+    border: solid black 1px;
+    padding: 10px;
+    position: absolute;
+    top: 105%;
+    right: 0;
+    width: 200px;
+    display: none;
+}
+.bell_icon__msg{
+    background-color: white;
+    border: solid black 1px;
+    padding: 10px;
+    position: absolute;
+    top: 105%;
+    right: 0;
+    width: 200px;
+    display: none;
+}
+.my_learning:hover .my_learning__msg{
+    display: inline-block;
+}
+.udemy_business:hover .udemy_business__msg{
+    display: inline-block;
+}
+.team_on_udemy:hover .team_on_udemy__msg{
+    display: inline-block;
+}
+.favorite_icon:hover .favorite_icon__msg{
+    display: inline-block;
+}
+.shopping_cart:hover .shopping_cart__msg{
+    display: inline-block;
+}
+.bell_icon:hover .bell_icon__msg{
+    display: inline-block;
+}
 .menubar{
     font-family: "Gabarito", serif;
     font-weight: 20px;
@@ -198,6 +245,20 @@ body{
 
 .banner-image img{
     width: 100%;
+}
+.banner-image h2{
+    padding-bottom: 10px;
+}
+.banner-image{
+    position: relative;
+}
+.banner-image__offer_box{
+    border: solid black 1px;
+    width: 480px;
+    padding: 10px;
+    position: absolute;
+    top: 10%;
+    left: 10%   ;
 }
 
 .course-container{
