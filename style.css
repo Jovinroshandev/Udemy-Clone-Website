@@ -1,9 +1,9 @@
-*{
+* {
     padding: 0;
     margin: 0;
 }
 
-body{
+body {
     font-family: "Inter", serif;
     font-optical-sizing: auto;
     font-size: 20px;
@@ -15,7 +15,7 @@ body{
     margin: 5px;
     padding: 10px;
     display: flex;
-    justify-content:space-between;
+    justify-content: space-between;
     align-items: center;
     border-bottom: solid black 1px;
     position: sticky;
@@ -24,12 +24,12 @@ body{
     z-index: 1;
 }
 
-.Navbar__s1{
+.Navbar__s1 {
     display: flex;
     flex-direction: column;
 }
 
-.Navbar__s1__arrow{
+.Navbar__s1__arrow {
     font-family: "Gabarito", serif;
     font-optical-sizing: auto;
     font-weight: 20px;
@@ -41,7 +41,7 @@ body{
     color: #A435F0;
 }
 
-.Navbar__s1__title{
+.Navbar__s1__title {
     font-family: "Gabarito", serif;
     font-size: 30px;
     margin: 0;
@@ -49,9 +49,8 @@ body{
     color: black;
 }
 
-.Navbar__s3{
+.Navbar__s3 {
     display: flex;
-    /* margin: 10px; */
     padding: 10px;
     width: 20%;
     border: solid 1px black;
@@ -59,68 +58,46 @@ body{
     align-items: center;
     border-radius: 30px;
 }
-.Navbar__s3__search_icon{
+
+.Navbar__s3__search_icon {
     opacity: 30%;
 }
-.Navbar__s3__search_box input{
+
+.Navbar__s3__search_box input {
     border: none;
     width: 220px;
 }
-.Navbar__s3__search_box input:focus{
+
+.Navbar__s3__search_box input:focus {
     outline: none;
 }
-.Navbar__s2__button,.Navbar__s4 p{
+
+.Navbar__s2__button,
+.Navbar__s4 p {
     padding: 20px 20px;
-    /* margin: 10px; */
     border: none;
     color: black;
     background-color: white;
     cursor: pointer;
 }
-.Navbar__s2__button:hover{
-    padding: 20px 20px;
-    /* margin: 10px; */
+
+.Navbar__s2__button:hover {
     background-color: #EDE5F9;
     color: #6D28D2;
-    cursor: pointer;
 }
-.udemy_business__head:hover{
-    background-color: #EDE5F9;
-    color: #6D28D2;
-    cursor: pointer;
-}
-.team_on_udemy__head:hover{
-    background-color: #EDE5F9;
-    color: #6D28D2;
-    cursor: pointer;
-}
-.my_learning__head:hover{
-    background-color: #EDE5F9;
-    color: #6D28D2;
-    cursor: pointer;
-}
-.my_learning__head:hover{
-    background-color: #EDE5F9;
-    color: #6D28D2;
-    cursor: pointer;
-}
-.favorite_icon__head:hover{
-    background-color: #EDE5F9;
-    color: #6D28D2;
-    cursor: pointer;
-}
-.shopping_cart__head:hover{
-    background-color: #EDE5F9;
-    color: #6D28D2;
-    cursor: pointer;
-}
-.bell_icon__head:hover{
+
+.udemy_business__head:hover,
+.team_on_udemy__head:hover,
+.my_learning__head:hover,
+.favorite_icon__head:hover,
+.shopping_cart__head:hover,
+.bell_icon__head:hover {
     background-color: #EDE5F9;
     color: #6D28D2;
     cursor: pointer;
 }
 
-.Navbar__s4{
+.Navbar__s4 {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
@@ -130,31 +107,21 @@ body{
     font-size: 15px;
 }
 
-.my_learning,.udemy_business,.team_on_udemy,.favorite_icon,.shopping_cart,.bell_icon
-{
+.my_learning,
+.udemy_business,
+.team_on_udemy,
+.favorite_icon,
+.shopping_cart,
+.bell_icon {
     position: relative;
 }
-.my_learning__msg{
-    background-color: white;
-    border: solid black 1px;
-    padding: 10px;
-    position: absolute;
-    top: 105%;
-    right: 0;
-    width: 150px;
-    display: none;
-}
-.udemy_business__msg{
-    background-color: white;
-    border: solid black 1px;
-    padding: 10px;
-    position: absolute;
-    top: 105%;
-    right: 0;
-    width: 200px;
-    display: none;
-}
-.team_on_udemy__msg{
+
+.my_learning__msg,
+.udemy_business__msg,
+.team_on_udemy__msg,
+.favorite_icon__msg,
+.shopping_cart__msg,
+.bell_icon__msg {
     background-color: white;
     border: solid black 1px;
     padding: 10px;
@@ -164,67 +131,29 @@ body{
     width: 200px;
     display: none;
 }
-.favorite_icon__msg{
-    background-color: white;
-    border: solid black 1px;
-    padding: 10px;
-    position: absolute;
-    top: 105%;
-    right: 0;
-    width: 200px;
-    display: none;
-}
-.shopping_cart__msg{
-    background-color: white;
-    border: solid black 1px;
-    padding: 10px;
-    position: absolute;
-    top: 105%;
-    right: 0;
-    width: 200px;
-    display: none;
-}
-.bell_icon__msg{
-    background-color: white;
-    border: solid black 1px;
-    padding: 10px;
-    position: absolute;
-    top: 105%;
-    right: 0;
-    width: 200px;
-    display: none;
-}
-.my_learning:hover .my_learning__msg{
+
+.my_learning:hover .my_learning__msg,
+.udemy_business:hover .udemy_business__msg,
+.team_on_udemy:hover .team_on_udemy__msg,
+.favorite_icon:hover .favorite_icon__msg,
+.shopping_cart:hover .shopping_cart__msg,
+.bell_icon:hover .bell_icon__msg {
     display: inline-block;
 }
-.udemy_business:hover .udemy_business__msg{
-    display: inline-block;
-}
-.team_on_udemy:hover .team_on_udemy__msg{
-    display: inline-block;
-}
-.favorite_icon:hover .favorite_icon__msg{
-    display: inline-block;
-}
-.shopping_cart:hover .shopping_cart__msg{
-    display: inline-block;
-}
-.bell_icon:hover .bell_icon__msg{
-    display: inline-block;
-}
-.menubar{
+
+.menubar {
     font-family: "Gabarito", serif;
     font-weight: 20px;
     font-style: normal;
     font-size: 15px;
     display: flex;
-    justify-content:space-evenly;
+    justify-content: space-evenly;
     align-items: center;
     border-bottom: solid black 1px;
 }
 
-.menubar button{
-    text-align: left; 
+.menubar p {
+    text-align: left;
     padding: 10px;
     margin: 10px;
     background-color: #5e15cb;
@@ -233,27 +162,27 @@ body{
     cursor: pointer;
     border: solid #4800b4 2px;
 }
-.menubar button:hover{
-    padding: 10px;
-    margin: 10px;
+
+.menubar p:hover {
     transition: 1s;
     background-color: #ffffff;
     color: black;
     border-radius: 20px;
-    cursor: pointer;
-    border: solid #4800b4 2px;
 }
 
-.banner-image img{
+.banner-image img {
     width: 100%;
 }
-.banner-image h2{
+
+.banner-image h2 {
     padding-bottom: 10px;
 }
-.banner-image{
+
+.banner-image {
     position: relative;
 }
-.banner-image__offer_box{
+
+.banner-image__offer_box {
     border: solid black 1px;
     width: 480px;
     padding: 10px;
@@ -261,107 +190,82 @@ body{
     top: 10%;
     left: 10%;
     opacity: 0;
-    animation-name:zoom;
-    transition-duration: 2s;
+    animation-name: zoom;
+    animation-duration: 2s; 
     animation-fill-mode: forwards;
-    
 }
 
-@keyframes zoom{
-    0%{
+@keyframes zoom {
+    0% {
         transform: scale(0);
         opacity: 0;
     }
-    100%{
+    100% {
         transform: scale(1);
         opacity: 1;
     }
 }
 
-.course-container{
+
+/* course card style */
+
+.course-container__child{
+    padding: 10px;
+    margin: 10px;
+    display: flex; 
+    /* gap: 10px; */
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.course-box img{
+    width: 250px;
+}
+.course-box{
     padding: 10px;
     margin: 10px;
 }
-.course-container h1,.course-container p{
-    padding-left: 20px;
+.card-content{
+    display: flex;
+    flex-direction: column;
+    width: 250px;
+    height: 300px;
+    background-color: #4800b4;
+    position: relative;
 }
-.course-container__cards {
+/* .card-content p:first-child{
+    position: absolute;
+    bottom: 0;
+}
+.card-content p:last-child{
+    padding: 0;
+    position: absolute;
+    bottom: 5%;
+} */
+.footer,
+.footer2,
+.footer3 {
+    padding: 20px;
+    font-size: 15px;
+    background-color: black;
+    color: white;
+    border-bottom: solid white 1px;
+}
+
+.footer__top,
+.footer__center {
     padding-top: 10px;
     display: flex;
     flex-wrap: wrap;
-    justify-content:space-around; /*Most import is to make card center */
-    gap: 30px;
 }
 
-.course-container__cards h2{
-    padding: 10px;
-    text-align: left;
-}
-.course-container__cards p{
-    padding-left: 10px;
-    text-align: left;
-}
-.course-container__button {
-    display: flex;
-    flex-direction: column; 
-    width: 250px; 
-    border: solid black 1px;
-    border-radius: 10px;
-    cursor: pointer;
-    flex-basis: 20%;
-    /* flex-grow: 1; */
-}
-
-.course-container__button img {
-    width: 100%;
-    height: auto; 
-    border-radius: 10px 10px 0px 0px;
-}
-
-.course-container__button:hover{
-    background-color: #e6ffff;
-    border-radius: 10px;
-    cursor: pointer;
-}
-
-.footer{
-    padding: 20px;
-    font-size: 15px;
-    background-color: #1D1E27;
-    color: white;
-    border-bottom: solid white 1px;
-}
-.footer2{
-    flex-wrap: wrap;
-    padding: 20px;
-    padding-top: 10px;
-    font-size: 15px;
-    background-color:black;
-    color: white;
-    border-bottom: solid white 1px;
-}
-.footer3{
-    padding: 20px;
-    padding-top: 10px;
-    font-size: 15px;
-    background-color:black;
-    color: white;
-    border-bottom: solid white 1px;
-}
-.footer__top,.footer__center {
-    padding-top: 10px;
-    display: flex;
-    flex-wrap: wrap; 
-}
-
-.footer__top > div ,.footer__center > div{
+.footer__top > div,
+.footer__center > div {
     flex: 1 1 250px;
 }
 
-.footer__top h3,.footer__center h3{
+.footer__top h3,
+.footer__center h3 {
     padding-top: 20px;
-}
-.footer__top h3,.footer__center h3{
     padding-bottom: 10px;
 }
 
@@ -370,9 +274,9 @@ body{
     margin: 5px 0;
 }
 
-.footer-top p, 
-.footer-top h1, 
-.footer-top h2, 
+.footer-top p,
+.footer-top h1,
+.footer-top h2,
 .footer-top h3 {
     word-wrap: break-word;
     overflow-wrap: break-word;
@@ -382,13 +286,14 @@ body{
 .footer3__text {
     color: white;
 }
-.footer3{
+
+.footer3 {
     align-items: center;
     display: flex;
     justify-content: space-between;
-    align-items: center;
 }
-.footer3__arrow{
+
+.footer3__arrow {
     font-family: "Gabarito", serif;
     font-optical-sizing: auto;
     font-weight: 20px;
@@ -401,28 +306,30 @@ body{
     color: #A435F0;
 }
 
-.topics{
+.topics {
     padding: 20px;
     margin: 20px;
 }
 
-.topics__container{
+.topics__container {
     display: flex;
     gap: 10px;
     margin-top: 10px;
     flex-wrap: wrap;
 }
 
-.topics__container p{
+.topics__container p {
     border: solid gray 1px;
     padding: 10px;
     flex-grow: 1;
     flex-basis: 25%;
 }
 
-.popular{
+.popular {
     padding: 20px;
 }
-.popular__title,.popular__subtitle{
+
+.popular__title,
+.popular__subtitle {
     padding-left: 20px;
 }

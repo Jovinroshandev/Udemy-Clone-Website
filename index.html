@@ -30,7 +30,7 @@
         </div>
 
         <div class="Navbar_s2">
-            <button class="Navbar__s2__button">Explore</button>
+            <p class="Navbar__s2__button">Explore</p>
         </div>
 
         <div class="Navbar__s3">
@@ -46,11 +46,13 @@
             <!-- buttons and icons -->
             <div class="udemy_business">
                 <p class="udemy_business__head">Udemy Business</p>
-                <p class="udemy_business__msg">Get your team access to over 27,000 top Udemy courses, anytime, anywhere</p>
+                <p class="udemy_business__msg">Get your team access to over 27,000 top Udemy courses, anytime, anywhere
+                </p>
             </div>
             <div class="team_on_udemy">
                 <p class="team_on_udemy__head">Teach on Udemy</p>
-                <p class="team_on_udemy__msg">Turn what you know into an opportunity and reach millions around the world</p>
+                <p class="team_on_udemy__msg">Turn what you know into an opportunity and reach millions around the world
+                </p>
             </div>
             <div class="my_learning">
                 <p class="my_learning__head">My Learning</p>
@@ -72,37 +74,38 @@
     </div>
     <!-- manubar -->
     <div class="menubar">
-        <button>Development</button>
-        <button>Business</button>
-        <button>Finance & Accounting</button>
-        <button>IT & Software</button>
-        <button>Health & Fitness</button>
-        <button>Personal Development</button>
-        <button>Lifestyle</button>
+        <p>Development</p>
+        <p>Business</p>
+        <p>Finance & Accounting</p>
+        <p>IT & Software</p>
+        <p>Health & Fitness</p>
+        <p>Personal Development</p>
+        <p>Lifestyle</p>
     </div>
     <!-- banner image -->
     <div class="banner-image">
         <img src="./images/banner_image.jpg" alt="Banner Image">
         <div class="banner-image__offer_box">
             <h2>24-Hour Flash Sale</h2>
-            <p>Learn from real-world experts for as low as ₹499.</p><p>Sale ends tonight!</p>
+            <p>Learn from real-world experts for as low as ₹499.</p>
+            <p>Sale ends tonight!</p>
         </div>
     </div>
     <!-- course-container -->
-    <div class="course-container">
+    <div class="course-container-parent">
         <h1 class="course-container__title">All the skills you need in one place</h1>
         <p>From critical skills to technical topics, Udemy supports your professional development</p>
-        <div class="course-container__cards">
-            <button class="course-container__button">
-                <img src="./images/course_7.jpg" alt="">
+        <div class="course-container__child">
+            <div class="course-box">
+                <img src="./images/course_7.jpg" alt="course-image">
                 <div class="card-content">
                     <h2>100 Days to Larn Java: The Complete Prof..</h2>
                     <p>John Mario Leo</p>
                     <p>4.5 ⭐⭐⭐⭐</p>
                     <p>&#8377;400 <del>1,450</del></p>
                 </div>
-            </button>
-            <button class="course-container__button">
+            </div>
+            <div class="course-box">
                 <img src="./images/course_1.jpg" alt="">
                 <div class="card-content">
                     <h2>Learn Advance Python</h2>
@@ -110,60 +113,62 @@
                     <p>5 ⭐⭐⭐⭐⭐</p>
                     <p>&#8377;400 <del>1,590</del></p>
                 </div>
-                <button class="course-container__button">
-                    <img src="./images/course_5.jpg" alt="">
-                    <div class="card-content">
-                        <h2>The Complete Full-Stack Web Development Bootcamp</h2>
-                        <p>Josphine Mary</p>
-                        <p>3.4 ⭐⭐⭐</p>
-                        <p>&#8377;399 <del>2,500</del></p>
-                    </div>
-                </button>
-                <button class="course-container__button">
-                    <img src="./images/course_2.jpg" alt="">
-                    <div class="card-content">
-                        <h2>Fullstack Web Development with Jo</h2>
-                        <p>Call me Jo</p>
-                        <p>5 ⭐⭐⭐⭐⭐</p>
-                        <p>&#8377;600 <del>4000</del></p>
-                    </div>
-                </button>
-                <button class="course-container__button">
-                    <img src="./images/course_3.jpg" alt="">
-                    <div class="card-content">
-                        <h2>Personal Development and Self Confidence: Explore and intro New People</h2>
-                        <p>Stew Johnson</p>
-                        <p>3.4 ⭐⭐⭐</p>
-                        <p>&#8377;8099 <del>12,500</del></p>
-                    </div>
-                </button>
-                <button class="course-container__button">
-                    <img src="./images/course_4.jpg" alt="">
-                    <div class="card-content">
-                        <h2>Data Analistic and Large Data Processing</h2>
-                        <p>Ashok Kumar</p>
-                        <p>4.5 ⭐⭐⭐⭐</p>
-                        <p>&#8377;799 <del>2,000</del></p>
-                    </div>
-                </button>
-                <button class="course-container__button">
-                    <img src="./images/course_6.jpg" alt="">
-                    <div class="card-content">
-                        <h2>Startup Business Idea & Tips</h2>
-                        <p>Mohan Babu</p>
-                        <p>3.4 ⭐⭐⭐</p>
-                        <p>&#8377;399 <del>2,500</del></p>
-                    </div>
-                </button>
-                <button class="course-container__button">
-                    <img src="./images/course_8.jpg" alt="">
-                    <div class="card-content">
-                        <h2>Sound Engineering Course</h2>
-                        <p>Manoj Kumar (Graphic & VFX Designer)</p>
-                        <p>2.4 ⭐⭐</p>
-                        <p>&#8377;599 <del>4,000</del></p>
-                    </div>
-                </button>
+            </div>
+            <div class="course-box">
+                <img src="./images/course_5.jpg" alt="">
+                <div class="card-content">
+                    <h2>The Complete Full-Stack Web Development Bootcamp</h2>
+                    <p>Josphine Mary</p>
+                    <p>3.4 ⭐⭐⭐</p>
+                    <p>&#8377;399 <del>2,500</del></p>
+                </div>
+            </div>
+
+            <div class="course-box">
+                <img src="./images/course_2.jpg" alt="">
+                <div class="card-content">
+                    <h2>Fullstack Web Development with Jo</h2>
+                    <p>Call me Jo</p>
+                    <p>5 ⭐⭐⭐⭐⭐</p>
+                    <p>&#8377;600 <del>4000</del></p>
+                </div>
+            </div>
+            <div class="course-box">
+                <img src="./images/course_3.jpg" alt="">
+                <div class="card-content">
+                    <h2>Personal Development and Self Confidence: Explore and intro New People</h2>
+                    <p>Stew Johnson</p>
+                    <p>3.4 ⭐⭐⭐</p>
+                    <p>&#8377;8099 <del>12,500</del></p>
+                </div>
+            </div>
+            <div class="course-box">
+                <img src="./images/course_4.jpg" alt="">
+                <div class="card-content">
+                    <h2>Data Analistic and Large Data Processing</h2>
+                    <p>Ashok Kumar</p>
+                    <p>4.5 ⭐⭐⭐⭐</p>
+                    <p>&#8377;799 <del>2,000</del></p>
+                </div>
+            </div>
+            <div class="course-box">
+                <img src="./images/course_6.jpg" alt="">
+                <div class="card-content">
+                    <h2>Startup Business Idea & Tips</h2>
+                    <p>Mohan Babu</p>
+                    <p>3.4 ⭐⭐⭐</p>
+                    <p>&#8377;399 <del>2,500</del></p>
+                </div>
+            </div>
+            <div class="course-box">
+                <img src="./images/course_8.jpg" alt="">
+                <div class="card-content">
+                    <h2>Sound Engineering Course</h2>
+                    <p>Manoj Kumar (Graphic & VFX Designer)</p>
+                    <p>2.4 ⭐⭐</p>
+                    <p>&#8377;599 <del>4,000</del></p>
+                </div>
+            </div>
         </div>
     </div>
     <!-- topics -->
@@ -190,113 +195,113 @@
         <p class="popular__subtitle">Pick the best fit</p>
         <div class="popular__container">
             <div class="course-container__cards">
-                <button class="course-container__button">
+                <p class="course-container__button">
                     <img src="./images/course_7.jpg" alt="">
-                    <div class="card-content">
-                        <h2>100 Days to Larn Java: The Complete Prof..</h2>
-                        <p>John Mario Leo</p>
-                        <p>4.5 ⭐⭐⭐⭐</p>
-                        <p>&#8377;400 <del>1,450</del></p>
-                    </div>
-                </button>
-                <button class="course-container__button">
+                <div class="card-content">
+                    <h2>100 Days to Larn Java: The Complete Prof..</h2>
+                    <p>John Mario Leo</p>
+                    <p>4.5 ⭐⭐⭐⭐</p>
+                    <p>&#8377;400 <del>1,450</del></p>
+                </div>
+                </p>
+                <p class="course-container__button">
                     <img src="./images/course_1.jpg" alt="">
-                    <div class="card-content">
-                        <h2>Learn Advance Python</h2>
-                        <p>Jovin Roshan</p>
-                        <p>5 ⭐⭐⭐⭐⭐</p>
-                        <p>&#8377;400 <del>1,590</del></p>
-                    </div>
-                    <button class="course-container__button">
-                        <img src="./images/course_5.jpg" alt="">
-                        <div class="card-content">
-                            <h2>The Complete Full-Stack Web Development Bootcamp</h2>
-                            <p>Josphine Mary</p>
-                            <p>3.4 ⭐⭐⭐</p>
-                            <p>&#8377;399 <del>2,500</del></p>
-                        </div>
-                    </button>
-                    <button class="course-container__button">
-                        <img src="./images/course_2.jpg" alt="">
-                        <div class="card-content">
-                            <h2>Fullstack Web Development with Jo</h2>
-                            <p>Call me Jo</p>
-                            <p>5 ⭐⭐⭐⭐⭐</p>
-                            <p>&#8377;600 <del>4000</del></p>
-                        </div>
-                    </button>
-                    <button class="course-container__button">
-                        <img src="./images/course_3.jpg" alt="">
-                        <div class="card-content">
-                            <h2>Personal Development and Self Confidence: Explore and intro New People</h2>
-                            <p>Stew Johnson</p>
-                            <p>3.4 ⭐⭐⭐</p>
-                            <p>&#8377;8099 <del>12,500</del></p>
-                        </div>
-                    </button>
-                    <button class="course-container__button">
-                        <img src="./images/course_4.jpg" alt="">
-                        <div class="card-content">
-                            <h2>Data Analistic and Large Data Processing</h2>
-                            <p>Ashok Kumar</p>
-                            <p>4.5 ⭐⭐⭐⭐</p>
-                            <p>&#8377;799 <del>2,000</del></p>
-                        </div>
-                    </button>
-                    <button class="course-container__button">
-                        <img src="./images/course_6.jpg" alt="">
-                        <div class="card-content">
-                            <h2>Startup Business Idea & Tips</h2>
-                            <p>Mohan Babu</p>
-                            <p>3.4 ⭐⭐⭐</p>
-                            <p>&#8377;399 <del>2,500</del></p>
-                        </div>
-                    </button>
-                    <button class="course-container__button">
-                        <img src="./images/course_8.jpg" alt="">
-                        <div class="card-content">
-                            <h2>Sound Engineering Course</h2>
-                            <p>Manoj Kumar (Graphic & VFX Designer)</p>
-                            <p>2.4 ⭐⭐</p>
-                            <p>&#8377;599 <del>4,000</del></p>
-                        </div>
-                    </button>
-                    <button class="course-container__button">
-                        <img src="./images/course_2.jpg" alt="">
-                        <div class="card-content">
-                            <h2>Fullstack Web Development with Jo</h2>
-                            <p>Call me Jo</p>
-                            <p>5 ⭐⭐⭐⭐⭐</p>
-                            <p>&#8377;600 <del>4000</del></p>
-                        </div>
-                    </button>
-                    <button class="course-container__button">
-                        <img src="./images/course_3.jpg" alt="">
-                        <div class="card-content">
-                            <h2>Personal Development and Self Confidence: Explore and intro New People</h2>
-                            <p>Stew Johnson</p>
-                            <p>3.4 ⭐⭐⭐</p>
-                            <p>&#8377;8099 <del>12,500</del></p>
-                        </div>
-                    </button>
-                    <button class="course-container__button">
-                        <img src="./images/course_4.jpg" alt="">
-                        <div class="card-content">
-                            <h2>Data Analistic and Large Data Processing</h2>
-                            <p>Ashok Kumar</p>
-                            <p>4.5 ⭐⭐⭐⭐</p>
-                            <p>&#8377;799 <del>2,000</del></p>
-                        </div>
-                    </button>
-                    <button class="course-container__button">
-                        <img src="./images/course_6.jpg" alt="">
-                        <div class="card-content">
-                            <h2>Startup Business Idea & Tips</h2>
-                            <p>Mohan Babu</p>
-                            <p>3.4 ⭐⭐⭐</p>
-                            <p>&#8377;399 <del>2,500</del></p>
-                        </div>
-                    </button>
+                <div class="card-content">
+                    <h2>Learn Advance Python</h2>
+                    <p>Jovin Roshan</p>
+                    <p>5 ⭐⭐⭐⭐⭐</p>
+                    <p>&#8377;400 <del>1,590</del></p>
+                </div>
+                <p class="course-container__button">
+                    <img src="./images/course_5.jpg" alt="">
+                <div class="card-content">
+                    <h2>The Complete Full-Stack Web Development Bootcamp</h2>
+                    <p>Josphine Mary</p>
+                    <p>3.4 ⭐⭐⭐</p>
+                    <p>&#8377;399 <del>2,500</del></p>
+                </div>
+                </p>
+                <p class="course-container__button">
+                    <img src="./images/course_2.jpg" alt="">
+                <div class="card-content">
+                    <h2>Fullstack Web Development with Jo</h2>
+                    <p>Call me Jo</p>
+                    <p>5 ⭐⭐⭐⭐⭐</p>
+                    <p>&#8377;600 <del>4000</del></p>
+                </div>
+                </p>
+                <p class="course-container__button">
+                    <img src="./images/course_3.jpg" alt="">
+                <div class="card-content">
+                    <h2>Personal Development and Self Confidence: Explore and intro New People</h2>
+                    <p>Stew Johnson</p>
+                    <p>3.4 ⭐⭐⭐</p>
+                    <p>&#8377;8099 <del>12,500</del></p>
+                </div>
+                </p>
+                <p class="course-container__button">
+                    <img src="./images/course_4.jpg" alt="">
+                <div class="card-content">
+                    <h2>Data Analistic and Large Data Processing</h2>
+                    <p>Ashok Kumar</p>
+                    <p>4.5 ⭐⭐⭐⭐</p>
+                    <p>&#8377;799 <del>2,000</del></p>
+                </div>
+                </p>
+                <p class="course-container__button">
+                    <img src="./images/course_6.jpg" alt="">
+                <div class="card-content">
+                    <h2>Startup Business Idea & Tips</h2>
+                    <p>Mohan Babu</p>
+                    <p>3.4 ⭐⭐⭐</p>
+                    <p>&#8377;399 <del>2,500</del></p>
+                </div>
+                </p>
+                <p class="course-container__button">
+                    <img src="./images/course_8.jpg" alt="">
+                <div class="card-content">
+                    <h2>Sound Engineering Course</h2>
+                    <p>Manoj Kumar (Graphic & VFX Designer)</p>
+                    <p>2.4 ⭐⭐</p>
+                    <p>&#8377;599 <del>4,000</del></p>
+                </div>
+                </p>
+                <p class="course-container__button">
+                    <img src="./images/course_2.jpg" alt="">
+                <div class="card-content">
+                    <h2>Fullstack Web Development with Jo</h2>
+                    <p>Call me Jo</p>
+                    <p>5 ⭐⭐⭐⭐⭐</p>
+                    <p>&#8377;600 <del>4000</del></p>
+                </div>
+                </p>
+                <p class="course-container__button">
+                    <img src="./images/course_3.jpg" alt="">
+                <div class="card-content">
+                    <h2>Personal Development and Self Confidence: Explore and intro New People</h2>
+                    <p>Stew Johnson</p>
+                    <p>3.4 ⭐⭐⭐</p>
+                    <p>&#8377;8099 <del>12,500</del></p>
+                </div>
+                </p>
+                <p class="course-container__button">
+                    <img src="./images/course_4.jpg" alt="">
+                <div class="card-content">
+                    <h2>Data Analistic and Large Data Processing</h2>
+                    <p>Ashok Kumar</p>
+                    <p>4.5 ⭐⭐⭐⭐</p>
+                    <p>&#8377;799 <del>2,000</del></p>
+                </div>
+                </p>
+                <p class="course-container__button">
+                    <img src="./images/course_6.jpg" alt="">
+                <div class="card-content">
+                    <h2>Startup Business Idea & Tips</h2>
+                    <p>Mohan Babu</p>
+                    <p>3.4 ⭐⭐⭐</p>
+                    <p>&#8377;399 <del>2,500</del></p>
+                </div>
+                </p>
             </div>
         </div>
     </div>
