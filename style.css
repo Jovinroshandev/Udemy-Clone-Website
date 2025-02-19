@@ -191,7 +191,7 @@ body {
     left: 10%;
     opacity: 0;
     animation-name: zoom;
-    animation-duration: 2s; 
+    animation-duration: 1s; 
     animation-fill-mode: forwards;
 }
 
