@@ -208,7 +208,15 @@ body {
 
 
 /* course card style */
-
+.course-container__title{
+    padding-top: 20px;
+    padding-left: 20px;
+    margin-left: 20px;
+}
+.course-container__desc{
+    padding-left: 20px;
+    margin-left: 20px;
+}
 .course-container__child{
     padding: 10px;
     margin: 10px;
