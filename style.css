@@ -183,7 +183,7 @@ body {
 }
 
 .banner-image__offer_box {
-    border: solid black 1px;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
     width: 480px;
     padding: 10px;
     position: absolute;
@@ -221,26 +221,43 @@ body {
     width: 250px;
 }
 .course-box{
+    cursor: pointer;
     padding: 10px;
     margin: 10px;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    border: none;
+    border-radius: 10px;
 }
 .card-content{
+    font-family: "Gabarito", serif;
+    font-weight: 20px;
+    font-style: normal;
+    font-size: 15px;
     display: flex;
     flex-direction: column;
     width: 250px;
-    height: 300px;
-    background-color: #4800b4;
+    height: 140px;
     position: relative;
+    padding-left: 10px;
 }
-/* .card-content p:first-child{
+.course-box__author-namae{
     position: absolute;
+    padding-bottom: 20%;
+    bottom: 0;
+    
+}
+.course-box__rating{
+    position: absolute;
+    padding-bottom: 10%;
     bottom: 0;
 }
-.card-content p:last-child{
-    padding: 0;
+
+.course-box__amount{
     position: absolute;
-    bottom: 5%;
-} */
+    padding-bottom: 0;
+    bottom: 0;
+}
+
 .footer,
 .footer2,
 .footer3 {
