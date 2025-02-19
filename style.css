@@ -260,10 +260,11 @@ body{
     position: absolute;
     top: 10%;
     left: 10%;
+    opacity: 0;
     animation-name:zoom;
     transition-duration: 2s;
     animation-fill-mode: forwards;
-    opacity: 0;
+    
 }
 
 @keyframes zoom{
