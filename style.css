@@ -231,16 +231,17 @@ body{
     color: white;
     border-radius: 20px;
     cursor: pointer;
-    border: none;
+    border: solid #4800b4 2px;
 }
 .menubar button:hover{
     padding: 10px;
     margin: 10px;
-    background-color: #892DE1;
-    color: white;
+    transition: 1s;
+    background-color: #ffffff;
+    color: black;
     border-radius: 20px;
     cursor: pointer;
-    border: none;
+    border: solid #4800b4 2px;
 }
 
 .banner-image img{
@@ -258,7 +259,19 @@ body{
     padding: 10px;
     position: absolute;
     top: 10%;
-    left: 10%   ;
+    left: 10%;
+    animation-name:zoom;
+    transition-duration: 2s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes zoom{
+    0%{
+        transform: scale(0);
+    }
+    100%{
+        transform: scale(1);
+    }
 }
 
 .course-container{
