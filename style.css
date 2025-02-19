@@ -263,14 +263,17 @@ body{
     animation-name:zoom;
     transition-duration: 2s;
     animation-fill-mode: forwards;
+    opacity: 0;
 }
 
 @keyframes zoom{
     0%{
         transform: scale(0);
+        opacity: 0;
     }
     100%{
         transform: scale(1);
+        opacity: 1;
     }
 }
 
