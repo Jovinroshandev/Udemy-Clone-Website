@@ -72,7 +72,7 @@ body {
     outline: none;
 }
 
-.Navbar__s2__button,
+.Navbar__s2 p,
 .Navbar__s4 p {
     padding: 20px 20px;
     border: none;
@@ -81,11 +81,8 @@ body {
     cursor: pointer;
 }
 
-.Navbar__s2__button:hover {
-    background-color: #EDE5F9;
-    color: #6D28D2;
-}
 
+.Navbar__s2 p:hover,
 .udemy_business__head:hover,
 .team_on_udemy__head:hover,
 .my_learning__head:hover,
@@ -106,7 +103,9 @@ body {
     font-style: normal;
     font-size: 15px;
 }
-
+.Navbar__s5{
+    display: none;
+}
 .my_learning,
 .udemy_business,
 .team_on_udemy,
@@ -184,7 +183,7 @@ body {
 
 .banner-image__offer_box {
     box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
-    width: 480px;
+    flex-grow: 1;
     padding: 10px;
     position: absolute;
     top: 10%;
@@ -211,22 +210,23 @@ body {
 .course-container__title{
     padding-top: 20px;
     padding-left: 20px;
-    margin-left: 20px;
+    margin-left: 10px;
 }
 .course-container__desc{
     padding-left: 20px;
-    margin-left: 20px;
+    margin-left: 10px;
 }
 .course-container__child{
-    padding: 10px;
-    margin: 10px;
-    display: flex; 
-    /* gap: 10px; */
-    justify-content: center;
+    display: flex;
+    flex-grow: 1;
     flex-wrap: wrap;
+    flex-basis: 25%;
+    padding-left: 10px;
+    /* justify-content: space-between; */
+    /* padding: 10px; */
 }
 .course-box img{
-    width: 250px;
+    width: 180px;
 }
 .course-box{
     cursor: pointer;
@@ -243,7 +243,7 @@ body {
     font-size: 15px;
     display: flex;
     flex-direction: column;
-    width: 250px;
+    width: 180px;
     height: 140px;
     position: relative;
     padding-left: 10px;
@@ -269,7 +269,7 @@ body {
 .footer,
 .footer2,
 .footer3 {
-    padding: 20px;
+    padding: 30px;
     font-size: 15px;
     background-color: black;
     color: white;
@@ -348,13 +348,46 @@ body {
     padding: 10px;
     flex-grow: 1;
     flex-basis: 25%;
+    cursor: pointer;
+}
+.topics__container p:hover{
+    border: solid gray 1px;
+    padding: 10px;
+    flex-grow: 1;
+    flex-basis: 25%;
+    background-color: #9900ff;
+    color: white;
 }
 
-.popular {
-    padding: 20px;
-}
 
 .popular__title,
 .popular__subtitle {
-    padding-left: 20px;
+    padding-left: 30px;
+}
+
+
+/* Media Queries */
+@media screen and (max-width:800px){
+    body{
+        font-size: 10px;
+    }
+    
+}
+
+@media screen and (max-width:600px){
+    .course-container__child{
+        flex-basis: 40%;
+    }
+    .menubar{
+        display: none;
+    }
+    .Navbar__s2,.Navbar__s3,.Navbar__s4{
+        display: none;
+    }
+    .Navbar__s5{
+        display: block;
+        cursor: pointer;
+        font-size: 16px;
+    }
+
 }
